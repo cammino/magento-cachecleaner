@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cammino_Cachecleaner>
+            <version>0.0.1</version>
+            <depends>
+                <Mage_Payment />
+            </depends>
+        </Cammino_Cachecleaner>
+    </modules>
+    <global>
+        <events>
+            <cms_block_save_after>
+                <observers>
+                    <clear_cache>
+                        <type>singleton</type>
+                        <class>Cammino_Cachecleaner_Model_Observer</class>
+                        <method>clearCache</method>
+                    </clear_cache>
+                </observers>
+            </cms_block_save_after>
+            <cms_page_save_after>
+                <observers>
+                    <clear_cache>
+                        <type>singleton</type>
+                        <class>Cammino_Cachecleaner_Model_Observer</class>
+                        <method>clearCache</method>
+                    </clear_cache>
+                </observers>
+            </cms_page_save_after>
+            <banners_banners_save_after>
+                <observers>
+                    <clear_cache>
+                        <type>singleton</type>
+                        <class>Cammino_Cachecleaner_Model_Observer</class>
+                        <method>clearCache</method>
+                    </clear_cache>
+                </observers>
+            </banners_banners_save_after>
+        </events>
+    </global>
+</config>
