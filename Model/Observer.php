@@ -5,5 +5,6 @@ class Cammino_Cachecleaner_Model_Observer
     {
         Mage::app()->cleanCache();
         Mage::app()->getCacheInstance()->flush();
+        rmdir('../../../../../var/cache');
     }
 }
