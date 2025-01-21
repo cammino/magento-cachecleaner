@@ -37,6 +37,15 @@
                     </clear_cache>
                 </observers>
             </banners_banners_save_after>
+            <sales_order_place_after>
+                <observers>
+                    <clear_cache>
+                        <type>singleton</type>
+                        <class>Cammino_Cachecleaner_Model_Observer</class>
+                        <method>clearCacheAfterOrder</method>
+                    </clear_cache>
+                </observers>
+            </sales_order_place_after>
         </events>
     </global>
 </config>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <cachecleaner translate="label">
+            <label>Cachecleaner</label>
+            <sort_order>200</sort_order>
+        </cachecleaner>
+    </tabs>
+    <sections>
+        <cachecleaner translate="label" >
+            <label>General</label>
+            <tab>cachecleaner</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+ 
+            <groups>
+                <cachecleaner_group translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>
+                        <cachecleaner_active translate="label">
+                            <label>Limpar cache fpc após o pedido</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </cachecleaner_active>
+                    </fields>
+
+                </cachecleaner_group>
+            </groups>
+        </cachecleaner>
+    </sections>
+</config>
